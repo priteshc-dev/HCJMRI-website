@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCJMRI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" type="img" href="img/HCJ Logo.jpg">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      position: sticky !important;
+      top: 0;
+      z-index: 1030;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      background-color: #fff !important;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Section with Icon and Scrolling Text
+  <section id="home" class="hero-section d-flex align-items-center justify-content-center">
+    <div class="scrolling-text-wrapper">
+      <div class="scrolling-text">
+        <i class="fas fa-hospital"></i>
+        Welcome to Hirabai Cowasji Jehangir Medical Research Institute
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/HCJ_trnsparent Logo.png" alt="HCJMRI Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about hcjmri.html">ABOUT HCJMRI</a></li>
+              <li><a class="dropdown-item" href="director mesage.html">DIRECTOR MESSAGE</a></li>
+              <li><a class="dropdown-item" href="commitee.html">COMMITTEE</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sweetling page.html">SWEETLINGS</a></li>
+              <li><a class="dropdown-item" href="rihan page.html">RIHAN</a></li>
+              <li><a class="dropdown-item" href="mai project.html">MAI</a></li>
+              <li><a class="dropdown-item" href="ankur page.html">ANKUR</a></li>
+              <li><a class="dropdown-item" href="yuvaan project.html">YUVAAN COHORT</a></li>
+              <li><a class="dropdown-item" href="HCJMRI COE for Type 1 Diabetes.html">HCJMRI COE for Type 1 Diabetes</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="research.html">RESEARCH</a></li>
+              <li><a class="dropdown-item" href="publication.html">PUBLICATION</a></li>
+              <li><a class="dropdown-item" href="events.html">EVENTS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="pwg calculator.html">Pregnancy Weight Gain Calculator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="Success Stories.html">Success Stories</a></li>
+          <li class="nav-item"><a class="nav-link active" href="awards.html">Awards</a></li>
+          <li class="nav-item"><a class="nav-link active" href="career with us.html">Career with us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="donation appeals.html">Donation Appeals</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact us.html">Contact Us</a></li>
+        </ul>
+
+        <div class="social-toggle-area">
+          <button class="social-toggle-btn btn" onclick="toggleSocialSidebar()">
+            <h5 class="mb-0">Social Media</h5>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="socialSidebar" class="social-sidebar right">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <!-- Organogram Chart section Start Here -->
+
+
+  <section>
+    <div class="org-wrapper">
+      <h2 class="org-title">Governing Council and Trustees</h2>
+
+      <!-- 👇 Down Arrow -->
+      <span id="scrollToTeam" class="scroll-down-button">👇</span>
+
+    </div>
+    <div class="org-container">
+      <div class="tree">
+        <div class="org-container-1">
+          <div class="tree">
+            <!-- Top level -->
+            <ul>
+              <li>
+                <div class="box">
+                  <div class="title">DIRECTOR</div>
+                  <div class="members">Dr. Uma Divate</div>
+                </div>
+
+                <!-- Second level -->
+                <ul>
+                  <li>
+                    <div class="box">
+                      <div class="title">CHIEF FINANCE OFFICER</div>
+                      <div class="members">Mr. Rupen Kapadia</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">DY. DIRECTOR</div>
+                      <div class="members">Dr. Anuradha Khadilkar</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">FINANCE COORDINATOR</div>
+                      <div class="members">Mr. Gopal Phadke</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">HONORARY CONSULTANTS</div>
+                      <div class="members">Dr. Vaman Khadilkar,<br> Dr. Vivek Patwardhan,<br>Dr. Yasmin Sethana,<br>
+                        Mr. Ketan
+                        Gondhalekar,<br> Dr. Neha
+                        Sanwalka,<br> Dr. Nikhil Shah
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Third Level -->
+                <ul>
+                  <li>
+                    <div class="box">
+                      <div class="title">RESEARCH OFFICERS</div>
+                      <div class="members">Dr. Neha Kajale<br>Dr. Rubina Mandlik<br>Dr. Chidvilas More<br>Dr. Sonali
+                        Wagle-Patki</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">MEDICAL OFFICERS</div>
+                      <div class="members">Dr. Dipali Ladkat<br>Dr. Shital Bhor<br>Dr. Megha Shelar<br>Dr. Kavita
+                        Makhijani</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">SOCIAL WORKERS</div>
+                      <div class="members">Mrs. Sandhya Gaikwad<br>Mrs. Yogini Daphal<br>Ms. Meghana Ghadge<br>Ms.
+                        Vaishnavi Raut</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">CHIEF ACCOUNTANT</div>
+                      <div class="members">Mrs. Shamim Momin</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">MARKETING & FUNDING <br>COORDINATOR</div>
+                      <div class="members">Mr. Raju Pardeshi</div>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <!-- Extra categories -->
+                <ul>
+                  <li>
+                    <div class="box">
+                      <div class="title">STATISTICIAN</div>
+                      <div class="members">Mrs. Aboli Bhalerao</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">DIABETES CLINIC<br>CONSULTANTS</div>
+                      <div class="members">Dr. Madhura Karguppikar<br>Dr. Jayashree Tongaonkar<br>Dr. Sajili
+                        Mehta<br>Dr. Nimisha Dange</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">PSYCHOLOGIST</div>
+                      <div class="members">Mr. AMARPAUL KEERTHI</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">IT & EQUIPMENT SUPERVISOR</div>
+                      <div class="members">Mr. Pradip Sonawane</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">TECHNICIANS</div>
+                      <div class="members">Namita Mutkekar<br>Raveena Kamble<br>Rupali Rajule<br>Smita Shelke<br>
+                        Shriram Narawde<br>Pragati Patil<br>Kalpesh Jagtap</div>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="box">
+                      <div class="title">RESEARCH ASSISTANTS</div>
+                      <div class="members">Urvashi Khade<br>Aditi Vargante<br>Pranjali Chandawad</div>
+                      <br>
+                      <div class="title">OFFICE ASSISTANTS</div>
+                      <div class="members">Vaishali Waghchoure<br>Shweta Vardekar<br>Shama Khandale</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">NUTRITIONIST</div>
+                      <div class="members">Mrs. Anagha Deshmukh<br>Ms. Isha Shah<br>Ms. Sayali Patwardhan<br>Sweta
+                        Murthy</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">COMMUNITY HEALTH<br>WORKER</div>
+                      <div class="members">Ms. Sonali Salunkhe</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">DATA COORDINATORS</div>
+                      <div class="members">Ms. Monika Sawale<br>Mr. Pritesh Chaudhari</div>
+                      <br>
+                      <div class="title">DATA ENTRY OPERATORS</div>
+                      <div class="members">Ms. Sneha Gharade<br>Ms. Vrushali Sawale</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">PHD STUDENTS</div>
+                      <div class="members">Ms. Mugdha Deshpande<br>Mrs. Gauri Khot<br>Mrs. Vaishali
+                        Tamhane<br>Ms.Sharvani Patil<br>Mrs.Rashmi Shah</div>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="box">
+                      <div class="title">PAEDIATRIC ENDOCRINE<br>FELLOWS</div>
+                      <div class="members">Dr. Karishma Bhade<br>Dr. Niharika Srivastava</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">DIABETES COORDINATOR</div>
+                      <div class="members">Mrs. Ashwini Mohite</div>
+                      <br>
+                      <div class="title">PATIENT COORDINATOR</div>
+                      <div class="members">Ms. Renuka Gawali</div>
+                      <br>
+                      <div class="title">SKILLING COORDINATOR</div>
+                      <div class="members">Mrs. Vandana Rao</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">WEBSITE & MEDIA<br>MANAGEMENT</div>
+                      <div class="members">Mr. Amit Lapalikar</div>
+                      <div class="members">Ms. Prachi Das</div>
+                      <div class="members">Mr. Nilesh Shinolikar</div>
+                      <div class="members">Mr. Pritesh Chaudhari</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">SWEETLINGS VOLUNTEERS</div>
+                      <div class="members">Ayesha Momin</div>
+                      <div class="members">Yash Jathar</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">HELPERS & DRIVERS</div>
+                      <div class="members">Ms. Archana Ughade</div>
+                      <div class="members">Ms. Laxmi Sheogaokar</div>
+                      <div class="members">Mr. Rajendra Rajule</div>
+                      <div class="members">Mr. Ravindra Mate</div>
+                      <div class="members">Mr. Balu Gade</div>
+                      <div class="members">Ms. Manda Sanap</div>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="box">
+                      <div class="title">FIELD WORKERS</div>
+                      <div class="members">Vandana Kamble, Subhadra Sable,</div>
+                      <div class="members">Savita Jagdale, Jayashri Kshirsagar,</div>
+                      <div class="members">Suman Shelke, Supriya Shide,</div>
+                      <div class="members">Sangita Sonawane, Sunita Bharadwaj,</div>
+                      <div class="members">Usha Thorat, Sabika Shaikh</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">PEER EDUCATORS</div>
+                      <div class="members">Punam Jetithor</div>
+                      <div class="members">Sanjay Jetithor</div>
+                      <div class="members">Harshal Waghmare</div>
+                      <div class="members">Amrapali Sonawane</div>
+                      <div class="members">Sweety Kamble</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <div class="title">VILLAGE REPRESENTATIVES</div>
+                      <div class="members">Surekha Veer, Ashwini Shinde,</div>
+                      <div class="members">Anjana Gadade, Anita Walke,</div>
+                      <div class="members">Rohini Bhagwat, Pooja Kale,</div>
+                      <div class="members">Ganga Kalkute, Pooja Shirke,</div>
+                      <div class="members">Asha Bangar, Dipa Gorde</div>
+                      <div class="members">Vidya Phand, Neeta Lokhande</div>
+                      <div class="members">Maya Date, Asmita Shinde</div>
+                      <div class="members">Renuka Vetal, Kalyani Dhokale</div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- ⬇️ Target section for scroll -->
+  <div class="toggle-link-container">
+    <span id="toggleTeamLink" class="team-link">👥 Meet Our Full Team</span>
+  </div>
+  <!-- Hidden Sections -->
+  <div id="hiddenTeamSections" style="display: none">
+
+
+    <!-- Core Committee Section -->
+    <section class="team-section">
+      <div class="section-heading-wrapper">
+        <h2 class="section-heading">Core Committee</h2>
+
+        <!-- ☝️ Up Arrow -->
+        <span id="scrollToTop" class="scroll-up-button">☝️</span>
+
+      </div>
+      <div class="single-member-grid">
+        <div class="single-member">
+          <h4>DIRECTOR</h4>
+          <img src="img/Team member img/Dummy Profile.jpg" alt="Dr. Uma Divate">
+          <p>Dr. Uma Divate</p>
+        </div>
+        <div class="single-member">
+          <h4>DY. DIRECTOR</h4>
+          <img src="img/Team member img/Dr.Anuradha Khadilkar.jpg" alt=" Dr. Anuradha Khadilkar">
+          <p>Dr. Anuradha Khadilkar</p>
+        </div>
+        <div class="single-member">
+          <h4>CHIEF FINANCE OFFICER</h4>
+          <img src="img/Team member img/Dummy Profile.jpg" alt="Mr. Rupen Kapadia">
+          <p>Mr. Rupen Kapadia</p>
+        </div>
+        <div class="single-member">
+          <h4>FINANCE COORDINATOR</h4>
+          <img src="img/Team member img/Dummy Profile.jpg" alt="Mrs. Shamim Momin">
+          <p>Mr. Gopal Phadke</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Honorary Consultants Section -->
+    <section class="team-section">
+      <h2 class="section-heading">Honorary Consultants</h2>
+      <div class="multi-member-grid">
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Vaman Khadilkar</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Vivek Patwardhan</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Yasmin Sethana</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mr. Ketan Gondhalekar</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Neha Sanwalka</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Nikhil Shah</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- All our Staff Section -->
+    <section class="team-section">
+      <h2 class="section-heading">Meet Our Dedicated Team</h2>
+      <div class="multi-member-grid">
+        <div class="multi-member">
+          <img src="img/Team member img/Dr.Neha kajale.png" alt="">
+          <p>Dr. Neha Kajale</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Rubina Mandalik.png" alt="">
+          <p>Dr. Rubina Mandlik</p>
+        </div>        
+        <div class="multi-member">
+          <img src="img/Team member img/Dr Dipali Ladkat.jpg" alt="">
+          <p>Dr. Dipali Ladkat</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dr Shital Bhor.jpg" alt="">
+          <p>Dr. Shital Bhor</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Megha Shelar</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Kavita Makhijani</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Chidvilas More</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Sonali Wagle-Patki</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Madhura Karguppikar</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Jayashree Tongaonkar</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Sajili Mehta</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Nimisha Dange</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Karishma Bhade</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Dr. Niharika Srivastava</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Shamim Momin</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mr. Raju Pardeshi</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Aboli Bhalerao</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mr. Amarpaul Keerthi</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Sandhya Gaikwad.jpg" alt="">
+          <p>Mrs. Sandhya Gaikwad</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Anagha Deshmukh.jpg" alt="">
+          <p>Mrs. Anagha Deshmukh</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Isha Shah</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Sayali Patwardhan</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Sweta Murthy</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Yogini Bhagat.jpg" alt="">
+          <p>Mrs. Yogini Daphal</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Meghana Ghadge</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Vaishnavi Raut</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Vaishali Waghchoure</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Shweta Wardekar</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Shama Khandale</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Urvashi Khade</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Aditi Vargante</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Pranjali Chandawad</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Monika Sawale</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Sneha Gharade</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Vrushali Sawale</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Sonali Salunkhe</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Mugdha Deshpande</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Gauri Bhat</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Vaishali Tamahane</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Sharvani Patil</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Rashmi Sah</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Ashwini Mohite</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Renuka Gawali</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Vandana Rao</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Namita Mutkrkar</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Raveena Kamble</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Rupali Rajule</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mrs. Smita Shelke</p>
+        </div>
+         <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mr. Shriram Narawde</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Ms. Pragati Patil</p>
+        </div>
+        <div class="multi-member">
+          <img src="img/Team member img/Dummy Profile.jpg" alt="">
+          <p>Mr. Kalpesh Jagtap</p>
+        </div>
+    </section>
+  </div>
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <!-- Fotter Section Start Here -->
+
+  <footer class="site-footer">
+    <div class="footer-main">
+
+      <div class="footer-col footer-about">
+
+        <!-- <div class="footer-logo">
+          <img src="img/HCJ_trnsparent Logo.png" alt="HCJMRI Logo">
+        </div> -->
+
+        <p>
+          Hirabai Cowasji Jehangir Medical Research Institute<br>
+          Improving health through research and care.
+        </p>
+        <ul class="footer-contact">
+          <li><i class="fas fa-phone-alt"></i> 020-66811741 / 26057004</li>
+          <li><i class="fas fa-envelope"></i> hcjmri.jehangirpune@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Jehangir Hospital, 32 Sassoon Road, Pune</li>
+        </ul>
+      </div>
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about hcjmri.html">About Us</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="donation appeals.html">Support Us</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Work Hours + Quote + Call -->
+      <div class="footer-col footer-hours">
+        <h5>Work Hours</h5>
+        <p><i class="fas fa-clock"></i> Mon – Sat: 9 AM – 5 PM</p>
+        <p>
+          “When a patient walks out holding a loved one's hand and wearing a smile, our purpose is fulfilled.”
+        </p>
+        <a href="contact us.html" class="footer-call-btn">Call Us Today</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Hirabai Cowasji Jehangir Medical Research Institute. All Rights Reserved.</p>
+      <p>
+        Designed by
+
+        <a href="https://github.com/priteshc-dev" target="_blank" rel="noopener">'Pritesh'</a>
+
+      </p>
+    </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your custom script file -->
+  <script src="JavaScript/main.js"></script>
+
+  <script>
+    const link = document.getElementById("toggleTeamLink");
+    const hiddenSection = document.getElementById("hiddenTeamSections");
+    const scrollToTeamBtn = document.getElementById("scrollToTeam");
+    const scrollToTopBtn = document.getElementById("scrollToTop");
+
+    // 👥 Toggle "Meet Our Full Team" section
+    link.addEventListener("click", () => {
+      const isHidden = hiddenSection.style.display === "none" || hiddenSection.style.display === "";
+
+      if (isHidden) {
+        hiddenSection.style.display = "block";
+        link.textContent = "⬆️ Hide Team Members";
+
+        // Scroll to the section
+        hiddenSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+        // Show "Back to Top" button, hide "Scroll Down"
+        scrollToTeamBtn.style.display = "none";
+        scrollToTopBtn.style.display = "inline-block";
+      } else {
+        hiddenSection.style.display = "none";
+        link.textContent = "👥 Meet Our Full Team";
+
+        // Show "Scroll Down" again, hide "Back to Top"
+        scrollToTeamBtn.style.display = "inline-block";
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+
+    // 👇 Scroll to "Meet Our Full Team"
+    scrollToTeamBtn.addEventListener("click", function () {
+      const meetLink = document.getElementById("toggleTeamLink");
+      if (meetLink) {
+        // Show hidden section
+        hiddenSection.style.display = "block";
+        meetLink.textContent = "⬆️ Hide Team Members";
+
+        // Scroll into view
+        meetLink.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        // Highlight effect
+        meetLink.style.backgroundColor = "#fff3cd";
+        setTimeout(() => {
+          meetLink.style.backgroundColor = "transparent";
+        }, 1500);
+
+        // Switch buttons
+        scrollToTeamBtn.style.display = "none";
+        scrollToTopBtn.style.display = "inline-block";
+      }
+    });
+
+    // ☝️ Scroll to top
+    scrollToTopBtn.addEventListener("click", function () {
+      const topSection = document.querySelector(".org-wrapper");
+      if (topSection) {
+        topSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      // Optionally hide section
+      hiddenSection.style.display = "none";
+      link.textContent = "👥 Meet Our Full Team";
+
+      // Switch buttons
+      scrollToTopBtn.style.display = "none";
+      scrollToTeamBtn.style.display = "inline-block";
+    });
+  </script>
+
+
+</body>
+
+</html>
